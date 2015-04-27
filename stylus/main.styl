@@ -1,0 +1,235 @@
+midgreen = #7c7f70
+lightgreen = #dddcde
+darkgreen = #052
+
+maxwidth = 1000px
+
+@font-face
+    font-family:"TopSecret";
+    src: url("/static/fonts/topsecret.ttf")
+
+link()
+    color navyblue
+    font-size 1.2em
+
+.secret
+    text-decoration none !important
+    font-family "TopSecret"
+    font-size 1.6em
+    display inline-block
+    color darkred
+    text-transform uppercase
+    transform rotate(-30deg)
+    transform-origin 0 0
+    float right
+    margin 25px 15px 0 5px
+    position absolute
+    bottom 50px
+    right 50px
+    &:hover
+        color red
+
+body
+    font-family Helvetica
+    font-weight 300
+    margin 0
+    background-color lightgreen
+
+p
+    line-height 1.4em
+        
+
+h2
+    text-transform uppercase
+    margin-bottom 20px
+
+.intro
+    max-width 500px
+    margin 60px auto 0 auto
+    
+nav-item()
+    display block
+    a
+        font-weight 400
+        line-height 20px
+        padding 10px 15px
+        display inline-block
+        text-decoration none !important
+        color black
+    a:hover
+        background-color darkgreen
+        color lightgreen
+
+clear()
+    display block
+    content " "
+    clear both
+
+.nav-item
+    float left
+    nav-item()
+
+.nav-item--right
+    float:right
+    nav-item()
+
+.big
+    font-size larger
+
+.container
+    max-width maxwidth
+    margin 0 auto
+
+.nav
+    padding 0 0
+    margin 0 auto
+    &::after,&::before
+        clear()
+
+.header
+    position relative
+    text-align center
+    color white
+    background-color darkgreen
+    padding 35px 0 75px 0
+    background-image url("/static/images/camo.gif")
+
+h1
+    font-size 50px
+
+
+h2
+    font-weight 400
+h2,h3
+    color darkgreen
+
+.sub
+    font-size 25px
+    font-weight normal
+    font-family "Courier"
+    //color #e0d0ff
+
+.info
+    clear()
+
+.content
+    margin-bottom 40px
+
+
+.content
+    -webkit-padding-start 0
+    padding 15px 0
+
+.frame
+    padding 0 5px 5px 0
+
+.half-rule
+    width 80px
+    margin 40px auto
+    border none
+    &::after
+        content " ** "
+        font-size 1.5em
+        color darkgreen
+        text-align center
+
+
+.question
+    font-style italic
+    margin-bottom 5px
+
+.answer
+    &::before
+        content " - "
+
+.link
+    link()
+    &:hover
+        color darkgreen
+
+.list
+    list-style none
+    li
+        line-height 1.3em
+    li::before
+        position relative
+        top 20%
+        content " * "
+
+.faq-list
+    list-style-type upper-alpha
+.faq
+    margin-bottom 25px
+
+form
+    margin 22px 0 34px 0
+
+input[type=submit]
+    // margin-left 35px
+    margin-top 12px
+    border-radius 3px
+    border solid 1px darkgreen
+    background-color darkgreen
+    color white
+    padding 5px 10px
+    &:hover
+        cursor pointer
+
+label
+    vertical-align top
+    display inline-block
+    width 10%
+    margin-right 12px
+
+.input-row
+    display block
+    margin-bottom 8px
+
+.input-row--message
+    margin-top 18px
+    display block
+    margin-bottom 18px
+
+legend
+    font-weight 400
+    color darkgreen
+    font-size 1.5em
+
+.session, .news-item
+    margin-bottom 28px
+
+.news
+    float right
+    padding 20px 16px
+    border-left solid 1px darkgreen
+
+.session_header, .news-item_date
+    color darkgreen
+    font-weight 500
+
+.news-item_author
+    margin-top 12px
+    font-style italic
+    &::before
+        content "   "
+
+.session_info--description, .session_info--attendance
+    margin-left 30px
+
+.session_info--description
+    font-style italic
+
+.session_info--attendance
+    font-weight 400
+
+.session_info--positive
+    color green
+
+.session_info--negative
+    color darkred
+
+.session_info--positive, .session_info--negative
+    display inline
+    &::before
+        content " - "
+        color black
